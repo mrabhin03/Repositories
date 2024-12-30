@@ -6,6 +6,11 @@ fetch(apiURL)
     .then(repos => {
         console.log(repos)
         const container = document.getElementById('repo-details');
+        repos.sort((a, b) => {
+            if (a.pushed_at < b.pushed_at) return 1;
+            if (a.pushed_at > b.pushed_at) return -1; 
+            return 0; 
+        });
         repos.forEach(repo => {
             visit=``;
             if(repo.homepage){
