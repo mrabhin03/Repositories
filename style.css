@@ -118,6 +118,7 @@ body{
     border-bottom-left-radius: 50px;
     height: 100%;
     flex-grow: 1;
+    width: 80vw;
     box-sizing: border-box;
     padding: 27px 55px;
     display: flex;
@@ -135,7 +136,7 @@ body{
 }
 .repo-details{
     display: grid;
-    grid-template-columns: repeat(2, 31.2rem);
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
     box-sizing: border-box;
     padding: 10px;
@@ -144,24 +145,44 @@ body{
 .Repo{
     /* height: 10.5rem; */
     /* width: 31.2rem; */
-    background-color: #ffffff28;
+    background-color: #ffffff4b;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.159);
-    border-left: 15px solid #00db45;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.188);
+    display: grid;
+    grid-template-columns: 15px 1fr;
+    gap: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.227);
+}
+.DataShow{
+    padding: 10px 0;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 10px;
 }
-.Repo > h3{
+
+.SideColor.Complete{
+    background-color: #03c741;
+}
+.SideColor.Pending{
+    background-color: #db0000;
+}
+.SideColor.Prototype{
+    background-color: #db8300;
+}
+
+.Repo >div> h3{
     margin: 0;
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 10px;
 }
-.Repo > span{
+.Repo >div> span{
     min-height:55px;
-    color: #7A7A7A;
+    color: #888888;
     width: fit-content;
     font-size: 13px;
     font-family: "Poppins", serif;
@@ -228,7 +249,7 @@ body{
     background-color: #008BCC;
     padding: 5px 10px;
 }
-@media (min-width:900px) {
+@media (min-width:1200px) {
     .Repos-Main{
         overflow: auto;
     }
@@ -251,11 +272,11 @@ body{
         font-size: 20px;
         margin-top: 10px;
     }
-    .Repo > h3{
+    .Repo >div> h3{
         font-size: 18px;
         line-height: 22px;
     }
-    .Repo > span{
+    .Repo >div> span{
         font-size: 12px;
         line-height: 18px;
     }
@@ -263,17 +284,20 @@ body{
         width: 100%;
     }
     .button button{
-        font-size: 11px;
+        font-size: 12px;
     }
     .languages span{
-        font-size: 9px;
-        padding: 3px 8px;
+        font-size: 10px;
+        padding: 3px 5px;
     }
     .languages{
         gap: 4px;
     }
     .Visit-button{
-        padding: 5px 15px;
+        padding: 4px 9px;
+    }
+    .Repository-button{
+        padding: 4px 9px;
     }
 }
 @media (max-width:616px) {
@@ -287,7 +311,7 @@ body{
 
 
 
-@media (max-width:900px) {
+@media (max-width:1200px) {
     .Container{
         flex-direction: column;
         overflow: auto;

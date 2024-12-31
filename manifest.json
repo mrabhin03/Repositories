@@ -1,0 +1,22 @@
+{
+    "name": "My Repositories",
+    "short_name": "Repositories",
+    "description": "Just a small website to show my repositories that i push to the Github.",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#0b0019",
+    "theme_color": "#0b0019",
+    "icons": [
+      {
+        "src": "Assets/Logo192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "Assets/Logo512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
