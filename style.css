@@ -203,8 +203,8 @@ body{
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+    align-items: end;
+    gap: 10px;
     margin-top: 10px;
 }
 .languages{
@@ -270,56 +270,6 @@ body{
     }
     
 }
-/* @media (max-width:1000px) {
-    .DataShow > span{
-        font-size: 11px;
-        line-height: 18px;
-    }
-} */
-@media (max-width:550px) {
-    .My-Project{
-        font-size: 20px;
-        margin-top: 10px;
-    }
-    .DataShow h3{
-        font-size: 18px;
-        line-height: 22px;
-    }
-    .DataShow > span{
-        font-size: 11px;
-        line-height: 18px;
-    }
-    .Repo{
-        width: 100%;
-    }
-    .button button{
-        font-size: 12px;
-    }
-    .languages span{
-        font-size: 10px;
-        height: fit-content;
-        padding: 3px 5px;
-    }
-    .languages{
-        gap: 4px;
-    }
-    .Visit-button{
-        padding: 4px 9px;
-    }
-    .Repository-button{
-        padding: 4px 9px;
-    }
-}
-@media (max-width:616px) {
-    .Repos-Main{
-        padding: 10px;
-    }
-    .repo-details{
-        padding: 0;
-    }
-}
-
-
 
 @media (max-width:1200px) {
     .Container{
@@ -332,7 +282,7 @@ body{
     
     .Profile-Main{
         width: 100%;
-        padding: 0 20px;
+        padding: 0;
         height: fit-content;
     }
     .MainDetails{
@@ -372,6 +322,57 @@ body{
         border-top-right-radius: 30px;
     }
 }
+/* @media (max-width:1000px) {
+    .DataShow > span{
+        font-size: 11px;
+        line-height: 18px;
+    }
+} */
+@media (max-width:550px) {
+    .My-Project{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .DataShow h3{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .DataShow > span{
+        font-size: 11px;
+        line-height: 18px;
+    }
+    .Repo{
+        width: 100%;
+    }
+    .button button{
+        font-size: 11px;
+    }
+    .languages span{
+        font-size: 9px;
+        height: fit-content;
+        padding: 3px 5px;
+    }
+    .languages{
+        gap: 4px;
+    }
+    .Visit-button{
+        padding: 4px 9px;
+    }
+    .Repository-button{
+        padding: 4px 9px;
+    }
+}
+@media (max-width:616px) {
+    .Repos-Main{
+        padding: 10px;
+    }
+    .repo-details{
+        padding: 0;
+    }
+}
+
+
+
 @media (max-width:470px) {
     .Profile-Image >img{
         height: 9rem;
@@ -398,7 +399,7 @@ body{
         margin-bottom: 10px;
     }
     .Profile-Main{
-        padding: 0 10px;
+        padding: 0;
     }
     .PDesc{
         font-size: .9rem;
