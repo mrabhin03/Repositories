@@ -124,7 +124,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    overflow: none;
 }
 .My-Project{
     margin: 0;
@@ -251,7 +250,7 @@ body{
 }
 @media (min-width:1200px) {
     .Repos-Main{
-        overflow: auto;
+        overflow: scroll;
     }
 }
 @media (min-width:1550px) {
@@ -334,6 +333,7 @@ body{
     .Profile-Main{
         width: 100%;
         padding: 0 20px;
+        height: fit-content;
     }
     .MainDetails{
         flex-direction: row;
@@ -405,9 +405,7 @@ body{
         width: 100%;
         margin-top: 0px;
     }
-    .Profile-Main{
-        height: fit-content;
-    }
+    
     .Profile-Footer{
         padding: 5px;
     }

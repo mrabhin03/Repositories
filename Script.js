@@ -172,3 +172,4 @@ function getCodeLanguage(RepoID,language){
     return MainLanguage;
 }
 RepoDetails()
+// alert(window.innerWidth+" "+window.innerHeight)
