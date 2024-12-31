@@ -4,7 +4,7 @@ Divdata=``;
 fetch(apiURL)
     .then(response => response.json())
     .then(repos => {
-        console.log(repos)
+        // console.log(repos)
         const container = document.getElementById('repo-details');
         repos.sort((a, b) => {
             if (a.pushed_at < b.pushed_at) return 1;
@@ -21,9 +21,7 @@ fetch(apiURL)
                         <span>${repo.description}</span>
                         <div class="repo-footer">
                             <div class="languages">
-                                <span>HTML</span>
-                                <span>Javascript</span>
-                                <span>CSS</span>
+                                <span>${repo.language}</span>
                             </div>
                             <div class="button">
                                 ${visit}
