@@ -174,24 +174,24 @@ body{
     background-color: #db8300;
 }
 
-.Repo >div> h3{
+.DataShow h3{
     margin: 0;
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 10px;
 }
-.Repo >div> span{
+.DataShow > span{
     min-height:55px;
     color: #888888;
     width: fit-content;
-    font-size: 13px;
+    font-size: .85rem;
+    line-height: 1.3rem;
     font-family: "Poppins", serif;
     font-weight: 600;
     font-style: normal;
     overflow-wrap: break-word; 
     word-wrap: break-word;
     width: 100%;
-    line-height: 1.3rem;
     overflow: hidden; 
     text-overflow: ellipsis; 
     display: -webkit-box;
@@ -265,19 +265,29 @@ body{
         flex-direction: column;
         padding: 0;
     }
+    .DataShow > span{
+        font-size: .75rem;
+        line-height: 1.2rem;
+    }
     
 }
+/* @media (max-width:1000px) {
+    .DataShow > span{
+        font-size: 11px;
+        line-height: 18px;
+    }
+} */
 @media (max-width:550px) {
     .My-Project{
         font-size: 20px;
         margin-top: 10px;
     }
-    .Repo >div> h3{
+    .DataShow h3{
         font-size: 18px;
         line-height: 22px;
     }
-    .Repo >div> span{
-        font-size: 12px;
+    .DataShow > span{
+        font-size: 11px;
         line-height: 18px;
     }
     .Repo{
@@ -288,6 +298,7 @@ body{
     }
     .languages span{
         font-size: 10px;
+        height: fit-content;
         padding: 3px 5px;
     }
     .languages{
