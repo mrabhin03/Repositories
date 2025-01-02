@@ -16,14 +16,14 @@ RepoData = {
     908311067 : //Quiz Hub
     {
         "Color" : "Pending",
-        "Languages":["HTML","CSS","Js"],
+        "Languages":["HTML","Mysql","PHP"],
         "WebLink":"https://lavenderblush-elk-818814.hostingersite.com/PHPs/"
     },
      
     895807119 : //Simple Java Codes Management
     {
         "Color" : "Complete",
-        "Languages":["HTML","CSS","Js"]
+        "Languages":["HTML","CSS","PHP"]
     },
      
     882621657 : //NoorAlMiqat
