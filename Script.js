@@ -157,6 +157,7 @@ function DisplayRepos(repos){
         
     });
     container.innerHTML=Divdata;
+    RepoAnimation();
 }
 function getCodeLanguage(RepoID,language){
     MainLanguage=`<span>${language}</span>`
@@ -171,5 +172,58 @@ function getCodeLanguage(RepoID,language){
     }
     return MainLanguage;
 }
+function RepoAnimation() {
+    setTimeout(()=>{
+        const repoData = document.querySelectorAll(".Repo");
+        repoData.forEach((Therepo, index) => {
+            setTimeout(() => {
+                Therepo.classList.add("Show");
+            }, index * 100); // 500ms delay for each element
+        });
+    },100);
+}
+
 RepoDetails()
-// alert(window.innerWidth+" "+window.innerHeight)
+
+const MyTitle=["Programmer","Designer","Video Editor", "3D Designer"];
+var titleno=0;
+var word = MyTitle[titleno]; 
+const typingSpeed = 120;
+let charIndex = 0;
+
+const typedTextElement = document.querySelector(".typing-effect");
+
+function typingTitle() {
+  if (charIndex < word.length) {
+    typedTextElement.textContent += word.charAt(charIndex);
+    charIndex++;
+    setTimeout(typingTitle, typingSpeed);
+  }else{
+    setTimeout(() => {
+        ClearTitle()
+    }, 4000);
+    
+  }
+}
+function ClearTitle() {
+    if (charIndex > 0) {
+        typedTextElement.textContent = word.substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(ClearTitle, typingSpeed); 
+    }
+    else{
+        titleno++;
+        if(titleno>=MyTitle.length){
+            titleno=0;
+        }
+        word=MyTitle[titleno]
+        setTimeout(() => {
+            typingTitle()
+        }, 300);
+        
+      }
+}
+
+
+typingTitle();
+
