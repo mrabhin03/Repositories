@@ -178,9 +178,9 @@ function RepoAnimation() {
         repoData.forEach((Therepo, index) => {
             setTimeout(() => {
                 Therepo.classList.add("Show");
-            }, index * 100); // 500ms delay for each element
+            }, index * 150); 
         });
-    },100);
+    },200);
 }
 
 RepoDetails()
