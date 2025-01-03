@@ -225,5 +225,5 @@ function ClearTitle() {
 }
 
 
-typingTitle();
+setTimeout(typingTitle,300)
 
