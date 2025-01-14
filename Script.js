@@ -15,7 +15,7 @@ RepoData = {
      
     908311067 : //Quiz Hub
     {
-        "Color" : "Pending",
+        "Color" : "Prototype",
         "Languages":["HTML","Mysql","PHP"],
         "WebLink":"https://lavenderblush-elk-818814.hostingersite.com/PHPs/"
     },
