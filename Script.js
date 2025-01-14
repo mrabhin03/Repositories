@@ -91,6 +91,11 @@ RepoData = {
         "Color" : "Complete",
         "Languages":["HTML","CSS","Js"]
     },
+    797359498 : //Project Manage
+    {
+        "Color" : "Prototype",
+        "Languages":["Django","HTML","Js"]
+    },
 };
 var repos;
 function RepoDetails(){
@@ -137,7 +142,7 @@ function DisplayRepos(repos){
             }
             TheLanguage=getCodeLanguage(repo.id,repo.language);
             
-            Divdata+=`<div class="Repo">
+            Divdata+=`<div class="Repo" name='${repo.id}'>
                         <div class='SideColor ${ColorValue}'></div>
                         <div class='DataShow'>
                             <h3>${repo.name.replaceAll("-"," ")}</h3>
