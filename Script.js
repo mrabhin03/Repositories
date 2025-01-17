@@ -135,8 +135,10 @@ function DisplayRepos(repos){
             visit=``;
             if(repo.homepage){
                 WebLink=repo.homepage
-                if(RepoData[repo.id]['WebLink']){
-                    WebLink=RepoData[repo.id]['WebLink']
+                if(repo.id in RepoData){
+                    if(RepoData[repo.id]['WebLink']){
+                        WebLink=RepoData[repo.id]['WebLink']
+                    }
                 }
                 visit=`<a href="${WebLink}" target='_blank'><button class="Visit-button">Visit</button></a>`;
             }
