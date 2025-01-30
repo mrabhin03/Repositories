@@ -23,7 +23,7 @@ RepoData = {
     895807119 : //Simple Java Codes Management
     {
         "Color" : "Complete",
-        "Languages":["HTML","CSS","PHP"]
+        "Languages":["HTML","Js","PHP"]
     },
      
     882621657 : //NoorAlMiqat
@@ -96,6 +96,21 @@ RepoData = {
         "Color" : "Prototype",
         "Languages":["Django","HTML","Js"]
     },
+    924693810: //Codes Hub
+    {
+        "Color" : "Complete",
+        "Languages":["HTML","Js","PHP"]
+    },
+    923090226: //Calendar MarkDate
+    {
+        "Color" : "Prototype",
+        "Languages":["HTML","Js","PHP"]
+    },
+    917762943: //Arduino Light control using Web
+    {
+        "Color" : "Complete",
+        "Languages":["HTML","CSS","Js"]
+    }
 };
 var repos;
 function RepoDetails(){
