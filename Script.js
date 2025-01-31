@@ -110,6 +110,11 @@ RepoData = {
     {
         "Color" : "Complete",
         "Languages":["HTML","CSS","Js"]
+    },
+    925247248: //IOT Wifi Module Controller
+    {
+        "Color" : "Complete",
+        "Languages":["Dart"]
     }
 };
 var repos;
