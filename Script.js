@@ -147,7 +147,8 @@ function DisplayRepos(repos){
     Divdata=``;
     const container = document.getElementById('repo-details');
     repos.forEach(repo => {
-        if(repo.id!=909760542){
+        // console.log(repo.id)
+        if(repo.id!=909760542 && repo.id!=949534881){
             ColorValue=`Complete`;
             if(repo.id in RepoData){
                 ColorValue=RepoData[repo.id]['Color']
