@@ -131,12 +131,14 @@ function RepoDetails(){
 }
 
 function GetRepos(){
+    
     fetch("https://palegreen-chough-695018.hostingersite.com/Github.php")
       .then(res => res.json())
       .then(repos => {
         repos.sort((a, b) =>
           new Date(b.pushed_at) - new Date(a.pushed_at)
         );
+        document.body.classList.remove("loaderActive")
         DisplayRepos(repos);
       })
       .catch(err => console.error(err));
