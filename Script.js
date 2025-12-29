@@ -126,30 +126,24 @@ RepoData = {
         "Color" : "Prototype",
     }
 };
-var repos;
 function RepoDetails(){
-    repos=GetRepos();
+    GetRepos();
 }
 
 function GetRepos(){
-    const username = 'mrabhin03'; 
-    const apiURL = `https://api.github.com/users/${username}/repos`;
-    fetch(apiURL)
-    .then(response => response.json())
-    .then(repos => {
-        
-        
-        repos.sort((a, b) => {
-            if (a.pushed_at < b.pushed_at) return 1;
-            if (a.pushed_at > b.pushed_at) return -1; 
-            return 0; 
-        });
+    fetch("https://palegreen-chough-695018.hostingersite.com/Github.php")
+      .then(res => res.json())
+      .then(repos => {
+        repos.sort((a, b) =>
+          new Date(b.pushed_at) - new Date(a.pushed_at)
+        );
         DisplayRepos(repos);
-        return repos;
-        
-    })
-    .catch(error => console.error('Error fetching repositories:', error));
+      })
+      .catch(err => console.error(err));
 }
+
+
+
 
 
 function DisplayRepos(repos){
@@ -220,7 +214,11 @@ function RepoAnimation() {
     },200);
 }
 
-RepoDetails()
+document.addEventListener("DOMContentLoaded", () => {
+    RepoDetails();
+    setTimeout(typingTitle, 300);
+});
+
 
 const MyTitle=["Programmer","Designer","Video Editor", "3D Designer"];
 var titleno=0;
@@ -262,5 +260,4 @@ function ClearTitle() {
 }
 
 
-setTimeout(typingTitle,300)
 
