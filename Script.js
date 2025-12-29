@@ -139,6 +139,7 @@ function GetRepos(){
           new Date(b.pushed_at) - new Date(a.pushed_at)
         );
         document.body.classList.remove("loaderActive")
+        setTimeout(typingTitle, 300);
         DisplayRepos(repos);
       })
       .catch(err => console.error(err));
@@ -218,7 +219,7 @@ function RepoAnimation() {
 
 document.addEventListener("DOMContentLoaded", () => {
     RepoDetails();
-    setTimeout(typingTitle, 300);
+    
 });
 
 
